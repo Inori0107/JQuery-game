@@ -1,0 +1,126 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+.main {
+	margin: auto;
+	width: 1000px;
+	height: 100vh;
+	background: linear-gradient(180deg,#f7c0dbb7 0%, #4886a3ce 100%);
+}
+/* 狀態列 */
+header {
+	width: 100%;
+	height: 200px;
+	position: relative;
+}
+header h1 {
+	margin: 0;
+	padding-top: 15px;
+	text-align: center;
+}
+header img {
+	width: 500px;
+}
+.tool-chart {
+	width: 80%;
+	position: relative;
+	margin: auto;
+	top: 15px;
+}
+/* 比率 */
+.progress {
+	width: 100%;
+	height: 40px;
+	background: #ECEAEB;
+	position: relative;
+	border-radius: 25px;
+	overflow: hidden;
+}
+.progress span {
+	display: inline-block;
+	width: 0%;
+	height: 100%;
+	font-size: 36px;
+	background: rgba(210, 180, 140, 0.9);
+}
+/* 標籤 */
+.tag {
+	width: 50px;
+	height: 25px;
+	position: absolute;
+	bottom: calc(100% + 7px);
+	border-radius: 3px;
+	background: #B1BC6E;
+	padding: 5px;
+	font-size: 15px;
+	color: wheat;
+	transform: translateX(-50%);
+	left: 0%;
+	text-align: center;
+	font-size: 24px;
+}
+.tag::after {
+	content: "";
+	display: block;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 7px solid #B1BC6E;
+	position: absolute;
+	left: 50%;
+	top: 100%;
+	transform: translateX(-50%);
+}
+
+.text {
+	background: rgba(12, 12, 12, 0.5);
+	color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+	vertical-align: auto;
+}
+
+/* 主介面 */
+section {
+	width: 100%;
+	height: 87.5%;
+	position: relative;
+}
+
+.icon {
+	position: absolute;
+	top: 30%;
+	left: 51%;
+	transform: translate(-50%, -50%);
+	z-index: 10;
+}
+.icon img {
+	width: 250px;
+}
+.game {
+	user-select: none;
+}
+
+.btn:hover {
+	border: 5px solid gainsboro;
+}
+#btn_left {
+	border-radius: 15px;
+	position: absolute;
+	top: 39%;
+	left: 25%;
+	transform: translate(-50%, -50%);
+	width: 480px;
+	height: 510px;
+	overflow: hidden;
+}
+#btn_right {
+	border-radius: 15px;
+	position: absolute;
+	top: 39%;
+	left: 75%;
+	transform: translate(-50%, -50%);
+	width: 480px;
+	height: 510px;
+	overflow: hidden;
+}
